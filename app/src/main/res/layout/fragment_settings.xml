@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".settings.Settings">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@color/electrishut_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtSetting"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Settings"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/bttnMobileNumber"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="350dp"
+            android:layout_height="105dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#223C5B"
+            android:drawableLeft="@drawable/messagesettings"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Mobile Number"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSetting" />
+
+        <TextView
+            android:id="@+id/txtChangeMobNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="Change Mobile Number"
+            android:textColor="#02E3F9"
+            android:textSize="12sp"
+            app:fontFamily="@font/poppins"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.451"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/bttnMobileNumber" />
+
+        <Button
+            android:id="@+id/bttnAbout"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="350dp"
+            android:layout_height="105dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#223C5B"
+            android:drawableLeft="@drawable/aboutsettings"
+            android:fontFamily="@font/poppins_bold"
+            android:text="About"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bttnMobileNumber" />
+
+        <TextView
+            android:id="@+id/txtAboutDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="About ElectriShut and its Dev Team"
+            android:textColor="#02E3F9"
+            android:textSize="12sp"
+            app:fontFamily="@font/poppins"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.606"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/bttnAbout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

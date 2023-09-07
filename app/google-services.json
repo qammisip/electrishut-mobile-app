@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "259297407306",
+    "firebase_url": "https://electrishut-2023-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "electrishut-2023",
+    "storage_bucket": "electrishut-2023.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259297407306:android:ad7e63f0122e387b0a91b3",
+        "android_client_info": {
+          "package_name": "com.example.electrishut_mobile_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "259297407306-qpgs92f8oratabgara2gvsfi171auerf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKAjcU8QIn2m6BEGhk_xuAzuDnPAoRKlE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "259297407306-qpgs92f8oratabgara2gvsfi171auerf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

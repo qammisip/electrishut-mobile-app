@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard.DashboardFragment"
+    android:background="@color/electrishut_bg"
+    android:orientation="vertical"
+    tools:layout="@layout/fragment_dashboard">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtDashboard"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Dashboard"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/statusCont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/statuscontainer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDashboard" />
+
+        <ImageView
+            android:id="@+id/statusIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_normal_status"
+            app:layout_constraintEnd_toEndOf="@+id/statusCont"
+            app:layout_constraintHorizontal_bias="0.146"
+            app:layout_constraintStart_toStartOf="@+id/statusCont"
+            app:layout_constraintTop_toTopOf="@+id/statusCont" />
+
+        <TextView
+            android:id="@+id/txtSystemStat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins"
+            android:text="System Status:"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/statusCont"
+            app:layout_constraintHorizontal_bias="0.607"
+            app:layout_constraintStart_toStartOf="@+id/statusCont"
+            app:layout_constraintTop_toTopOf="@+id/statusCont" />
+
+        <TextView
+            android:id="@+id/lblSystemStat"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="NORMAL"
+            android:textColor="#2BF8A8"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="@+id/statusCont"
+            app:layout_constraintHorizontal_bias="0.864"
+            app:layout_constraintStart_toStartOf="@+id/statusCont"
+            app:layout_constraintTop_toBottomOf="@+id/txtSystemStat" />
+
+        <TextView
+            android:id="@+id/lblAction"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:text="No action needed."
+            app:layout_constraintEnd_toEndOf="@+id/statusCont"
+            app:layout_constraintHorizontal_bias="0.7"
+            app:layout_constraintStart_toStartOf="@+id/statusCont"
+            app:layout_constraintTop_toBottomOf="@+id/lblSystemStat" />
+
+        <TextView
+            android:id="@+id/txtSensorsOverview"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Sensors Overview"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.113"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/statusContainer" />
+
+        <ImageView
+            android:id="@+id/floodContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/sensorcontainer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSensorsOverview" />
+
+        <TextView
+            android:id="@+id/lblFlood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="80dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/floodContainer"
+            app:layout_constraintHorizontal_bias="0.445"
+            app:layout_constraintStart_toStartOf="@+id/floodContainer"
+            app:layout_constraintTop_toTopOf="@+id/floodContainer"
+            android:text="Flood"/>
+
+        <TextView
+            android:id="@+id/waterStat"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="-3dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/floodContainer"
+            app:layout_constraintHorizontal_bias="0.437"
+            app:layout_constraintStart_toStartOf="@+id/floodContainer"
+            app:layout_constraintTop_toBottomOf="@+id/lblFlood"
+            tools:text="" />
+
+        <TextView
+            android:id="@+id/lblWater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Level:"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/floodContainer"
+            app:layout_constraintHorizontal_bias="0.152"
+            app:layout_constraintStart_toStartOf="@+id/floodContainer"
+            app:layout_constraintTop_toBottomOf="@+id/waterStat" />
+
+        <TextView
+            android:id="@+id/water"
+            android:layout_width="100dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="-2dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/floodContainer"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/lblWater"
+            app:layout_constraintTop_toBottomOf="@+id/waterStat"
+            tools:text="" />
+
+        <ImageView
+            android:id="@+id/earthquakeContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/sensorcontainer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/floodContainer"
+            app:layout_constraintTop_toBottomOf="@+id/txtSensorsOverview" />
+
+        <TextView
+            android:id="@+id/lblEarthquake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="43dp"
+            android:fontFamily="@font/poppins"
+            android:text="Earthquake"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/earthquakeContainer"
+            app:layout_constraintStart_toStartOf="@+id/earthquakeContainer"
+            app:layout_constraintTop_toTopOf="@+id/earthquakeContainer" />
+
+        <TextView
+            android:id="@+id/earthquakeStat"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="-3dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/earthquakeContainer"
+            app:layout_constraintHorizontal_bias="0.437"
+            app:layout_constraintStart_toStartOf="@+id/earthquakeContainer"
+            app:layout_constraintTop_toBottomOf="@+id/lblEarthquake"
+            tools:text="" />
+
+        <TextView
+            android:id="@+id/lblEarth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Intensity:"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/earthquakeContainer"
+            app:layout_constraintHorizontal_bias="0.176"
+            app:layout_constraintStart_toStartOf="@+id/earthquakeContainer"
+            app:layout_constraintTop_toBottomOf="@+id/earthquakeStat" />
+
+        <TextView
+            android:id="@+id/earthquake"
+            android:layout_width="87dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="3dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/earthquakeContainer"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/lblEarth"
+            app:layout_constraintTop_toBottomOf="@+id/earthquakeStat"
+            tools:text="" />
+
+        <ImageView
+            android:id="@+id/fireContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingBottom="80dp"
+            android:src="@drawable/sensorcontainer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/floodContainer" />
+
+        <TextView
+            android:id="@+id/lblFire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins"
+            android:text="Fire"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/fireContainer"
+            app:layout_constraintHorizontal_bias="0.147"
+            app:layout_constraintStart_toStartOf="@+id/fireContainer"
+            app:layout_constraintTop_toTopOf="@+id/fireContainer" />
+
+        <TextView
+            android:id="@+id/fireStat"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="-3dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/fireContainer"
+            app:layout_constraintHorizontal_bias="0.437"
+            app:layout_constraintStart_toStartOf="@+id/fireContainer"
+            app:layout_constraintTop_toBottomOf="@+id/lblFire"
+            tools:text="" />
+
+        <TextView
+            android:id="@+id/lblTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Temp:"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/fireContainer"
+            app:layout_constraintHorizontal_bias="0.156"
+            app:layout_constraintStart_toStartOf="@+id/fireContainer"
+            app:layout_constraintTop_toBottomOf="@+id/fireStat" />
+
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="100dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="3dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/fireContainer"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/lblTemp"
+            app:layout_constraintTop_toBottomOf="@+id/fireStat"
+            tools:text="" />
+
+        <TextView
+            android:id="@+id/lblFireDetect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Fire:"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/fireContainer"
+            app:layout_constraintHorizontal_bias="0.145"
+            app:layout_constraintStart_toStartOf="@+id/fireContainer"
+            app:layout_constraintTop_toBottomOf="@+id/lblTemp" />
+
+        <TextView
+            android:id="@+id/txtFireDetection"
+            android:layout_width="100dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/fireContainer"
+            app:layout_constraintStart_toEndOf="@+id/lblFireDetect"
+            app:layout_constraintTop_toBottomOf="@+id/temperature"
+            tools:text="" />
+
+        <ImageView
+            android:id="@+id/statusContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/switchingcontainer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/statusCont" />
+
+        <ImageView
+            android:id="@+id/powerIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/powericon"
+            app:layout_constraintEnd_toEndOf="@+id/statusContainer"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="@+id/statusContainer"
+            app:layout_constraintTop_toTopOf="@+id/statusContainer" />
+
+        <TextView
+            android:id="@+id/txtPowerStat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Power On/Off"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:fontFamily="@font/poppins_medium"
+            app:layout_constraintEnd_toEndOf="@+id/statusContainer"
+            app:layout_constraintStart_toStartOf="@+id/statusContainer"
+            app:layout_constraintTop_toBottomOf="@+id/powerIcon" />
+
+        <ToggleButton
+            android:id="@+id/bttnPower"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/toggle_button"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/statusContainer"
+            app:layout_constraintStart_toStartOf="@+id/statusContainer"
+            app:layout_constraintTop_toBottomOf="@+id/txtPowerStat" />
+
+        <ImageView
+            android:id="@+id/bttnAbtThreshold"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="33dp"
+            android:src="@drawable/question_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.017"
+            app:layout_constraintStart_toEndOf="@+id/txtSensorsOverview"
+            app:layout_constraintTop_toBottomOf="@+id/statusContainer" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/abt_ScrollView"
+    android:fillViewport="true"
+    android:background="@color/electrishut_bg"
+    tools:context=".settings.About">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtElectriShutdev"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppins"
+            android:text="The Dev Team"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAbt3" />
+
+        <TextView
+            android:id="@+id/txtAbout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins"
+            android:text="About ElectriShut"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/txtAbt1"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppins"
+            android:justificationMode="inter_word"
+            android:text="This mobile application is interconnected to the switching system wherein it can interrupt or cut off the electricity when the sensors detect disasters namely flood, earthquake, and fire."
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAbout" />
+
+        <TextView
+            android:id="@+id/txtAbt2"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/poppins"
+            android:justificationMode="inter_word"
+            android:text="It has the capability to notify the user when the system detected a disaster and let the user to cut off the power through the mobile application or SMS. The user can decide whether they can manually shut off the power or let the system do it. Moreover, the mobile app and SMS also sends a verification message when the system has successfully cut off the power."
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAbt1" />
+
+        <TextView
+            android:id="@+id/txtAbt3"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/poppins"
+            android:justificationMode="inter_word"
+            android:text="The user can also view the status of the sensors and the system itself using the mobile app."
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAbt2" />
+
+        <ImageView
+            android:id="@+id/joelabout"
+            android:layout_width="350dp"
+            android:layout_height="145dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/joelabout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtElectriShutdev"
+            app:srcCompat="@drawable/joelabout" />
+
+        <ImageView
+            android:id="@+id/angelabout"
+            android:layout_width="350dp"
+            android:layout_height="145dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/angelabout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/joelabout"
+            app:srcCompat="@drawable/angelabout" />
+
+        <ImageView
+            android:id="@+id/earlabout"
+            android:layout_width="350dp"
+            android:layout_height="145dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/earlabout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/angelabout"
+            app:srcCompat="@drawable/earlabout" />
+
+        <ImageView
+            android:id="@+id/cyreneabout"
+            android:layout_width="350dp"
+            android:layout_height="145dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/cyreneabout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/earlabout"
+            app:srcCompat="@drawable/cyreneabout" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="228dp"
+            android:layout_height="72dp"
+            android:src="@drawable/applogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/applogo" />
+
+        <TextView
+            android:id="@+id/txtYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:text="ElectriShut 2023"
+            app:fontFamily="@font/poppins"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cyreneabout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

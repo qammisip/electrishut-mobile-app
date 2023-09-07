@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".settings.MobileNumber">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/electrishut_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtMobileNum"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Mobile Number"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/mobNumContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/mobilenumcontainer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtMobileNum" />
+
+        <TextView
+            android:id="@+id/txtMobNumContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="60dp"
+            android:text="Current Mobile Number"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:fontFamily="@font/poppins_bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mobNumContainer" />
+
+        <TextView
+            android:id="@+id/txtPrefix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+63"
+            android:textColor="#02E3F9"
+            android:textSize="12sp"
+            app:fontFamily="@font/poppins"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.156"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtMobNumContainer" />
+
+        <TextView
+            android:id="@+id/txtNumCont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text=""
+            android:textColor="#02E3F9"
+            android:textSize="12sp"
+            app:fontFamily="@font/poppins"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.257"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtMobNumContainer" />
+
+        <TextView
+            android:id="@+id/txtNewNum"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="New Mobile Number:"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mobNumContainer" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputNewNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="15dp"
+            android:textColorHint="#CDCDCD"
+            app:counterEnabled="true"
+            app:counterMaxLength="10"
+            app:helperTextTextColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNewNum">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/newNum_input"
+                style="@style/Widget.Design.TextInputLayout"
+                android:layout_width="350dp"
+                android:layout_height="55dp"
+                android:hint="9XXXXXXXXX"
+                android:inputType="phone"
+                android:lines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/txtreEnterNum"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Re-Enter Mobile Number:"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputNewNum" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputreEnterNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="15dp"
+            android:textColorHint="#CDCDCD"
+            app:counterEnabled="true"
+            app:counterMaxLength="10"
+            app:helperTextTextColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtreEnterNum">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reEnterNum_input"
+                style="@style/Widget.Design.TextInputLayout"
+                android:layout_width="342dp"
+                android:layout_height="61dp"
+                android:hint="9XXXXXXXXX"
+                android:inputType="phone"
+                android:lines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/bttnCancel"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="167dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="CANCEL"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toStartOf="@+id/bttnSave"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputreEnterNum"
+            app:strokeColor="#CDCDCD" />
+
+        <Button
+            android:id="@+id/bttnSave"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="167dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#02E3F9"
+            android:fontFamily="@font/poppins_bold"
+            android:text="SAVE"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bttnCancel"
+            app:layout_constraintTop_toBottomOf="@+id/inputreEnterNum" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

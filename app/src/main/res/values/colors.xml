@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    //Added Colors for the Mobile App
+    <color name="electrishut_bg">#091C32 </color>
+    <color name="bottom_navigation_color">#223C5B</color>
+    <color name="bottom_nav_selected">#02E3F9</color>
+    <color name="cancel_switch">#CDCDCD</color>
+    <color name="power_switch">#2BF8A8</color>
+    <color name="faq">#00B1FF</color>
+    <color name="dashboard_active">#02E3F9</color>
+    <color name="dashboard_inactive">#02E3F9</color>
+    <color name="critical_status_color">#FF3737</color>
+    <color name="warning_status_color">#FFA800</color>
+</resources>
